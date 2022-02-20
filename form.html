@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #05c46b;
+            text-align: center;
+        }
+        
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+        }
+        
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        
+        button {
+            background-color: #05c46b;
+            font-size: 21px;
+            display: block;
+            width: 50%;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 26%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is my form page</h1>
+    <form id="form">
+        <div class="form-control">
+
+            <label for="name" id="label-name">
+                Name
+            </label>
+
+            <input type="text" id="name" placeholder="Enter your name" />
+
+        </div>
+        <div class="form-control">
+
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <input type="email" id="email" placeholder="Enter your email" />
+
+        </div>
+        <div class="form-control">
+
+            <label for="age" id="label-age">
+
+                Age
+
+            </label>
+            <input type="text" id="age" placeholder="Enter your age" />
+
+        </div>
+        <div class="form-control">
+
+            <label for="role" id="label-role">
+
+                Select your city ?
+
+            </label>
+
+
+            <select name="role" id="role">
+
+                <option value="student">Ujjain</option>
+
+                <option value="intern">indore</option>
+
+                <option value="professional">
+
+                    Bhopal
+
+                </option>
+
+                <option value="other">Delhi</option>
+
+            </select>
+
+        </div>
+        <div class="form-control">
+
+            <label>
+                select your gender 
+
+            </label>
+            <label for="recommed-1">
+
+                <input type="radio"
+
+                       id="recommed-1"
+
+                       name="recommed">Male</input>
+
+            </label>
+
+            <label for="recommed-2">
+
+                <input type="radio"
+
+                       id="recommed-2"
+
+                       name="recommed">female</input>
+
+            </label>
+
+            <label for="recommed-3">
+
+                <input type="radio"
+
+                       id="recommed-3"
+
+                       name="recommed">Other</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Enter you date of birth 
+            </label>
+            <input type="date">
+            <div class="form-control">
+                <div class="form-control">
+                    <label for="comment">
+                Any comments or suggestions
+            </label>
+                    <textarea name="comment" id="comment" placeholder="Enter your comment here">
+            </textarea>
+
+                </div>
+                <label>
+                    Agree for all that
+                </label>
+
+                <input type="checkbox" />
+
+                <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>
